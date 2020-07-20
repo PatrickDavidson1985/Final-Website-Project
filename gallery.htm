@@ -4,35 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/gallery.css">
+    <script src="/js/gallery.js">
+    
+    </script>
 </head>
 <body>
-    <div class="gallery">
-        <a target="_blank" href="/images/image1.jpg">
-          <img src="/images/image1.jpg" alt="image1" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
+    <div class="links">
+        <a href="#">Home</a>
+        <a href="#">Order Form</a>
+        <a href="#">Blog</a>
+        <a href="#">About Us</a>
+        <a href="#">Special Offers</a>
+        <a href="#">Gallery</a>
+    </div>
+    
+
+      <div class="row">
+        <div class="column">
+          <img src="/images/image1.jpg" alt="image1" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="images/image2.jpg" alt="image2" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="images/image3.jpg" alt="image3" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="/images/image4.jpg" alt="image4" style="width:100%" onclick="myFunction(this);">
+        </div>
       </div>
       
-      <div class="gallery">
-        <a target="_blank" href="img_forest.jpg">
-          <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
+      <!-- The expanding image container -->
+      <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
       
-      <div class="gallery">
-        <a target="_blank" href="img_lights.jpg">
-          <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
       
-      <div class="gallery">
-        <a target="_blank" href="img_mountains.jpg">
-          <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-        
+        <!-- Image text -->
+        <div id="imgtext"></div>
+      </div>  
 </body>
 </html>
