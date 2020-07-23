@@ -34,7 +34,7 @@
   }
   
   /* The expanding image container */
-  .container {
+  .container2 {
     position: relative;
     display: none;
   }
@@ -57,5 +57,10 @@
     font-size: 35px;
     cursor: pointer;
   }
+
+  
+    
+    
+  
 
   

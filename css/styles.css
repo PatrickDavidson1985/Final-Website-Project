@@ -21,6 +21,12 @@ body {
     background-repeat: no-repeat;
     height: 100%ß;
     background-size: 500, 500;
+    text-align: center;
+    opacity: 75%;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 60px;
 }
 
 
@@ -60,9 +66,13 @@ body {
     text-decoration: none;
   }
 
-  .container {
-    margin-top: 60px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 60px;
+   form label, input, textarea {
+    display: block;
+    text-align: left;
+    }
+
+  form {
+    padding: 40px;
   }
+
+
