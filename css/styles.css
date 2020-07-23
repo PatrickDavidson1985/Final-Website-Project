@@ -32,6 +32,19 @@ body {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  
+}
+
+.links li{
+  width: 50px;
+  height: 50px;
+  display: inline;
+}
+
+.links li img {
+  height: 40px;
+  width: 40px;
+  padding-top: 0;
 }
 
 .links a:hover {
