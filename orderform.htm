@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src = "/js/form.js"></script>
     <title>Order Form</title>
 </head>
 <body>
@@ -17,7 +18,15 @@
           <li> <a href="/gallery.htm">Gallery</a></li>
       </ul>
       <div class="container">
-    <form>
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+
+      <!--  
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
+
+      -->
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname"><br>
         <label for="lname">Last name:</label><br>
@@ -31,7 +40,7 @@
         <label type="text">State</label>
         <input type="text" id="State" name="State"> 
         <label type="text">Zip Code</label>
-        <input type="text" id="Zip Code" name="Zip Code">  
+        <input type="text" id="zipCode" name="Zip Code">  
         <textarea name="question1" cols= "40"rows="6">Do you live in an area with Breed Specific Legislation? How do you know?</textarea> 
         <textarea name="question1" cols= "40"rows="6">Do you live in an area with Mandatory Spay/Neuter Laws? How do you know?</textarea>
         <label type="text">Do you have any children in the house?</label> 
@@ -39,6 +48,8 @@
         <label for="checkbox">Yes</label> 
         <input type="checkbox" id="checkbox" name="checkbox">
         <label for="checkbox">No</label> 
+
+        <input type="submit" value="Submit">
       </form>
     </div>
 </body>
